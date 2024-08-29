@@ -8,10 +8,10 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7543594921:AAEb0Qs9usGggKGl0Q-iZ-JimDzJhtv01e0')
+bot = telebot.TeleBot('7068393170:AAGRewkHD1J0X6ZUzt4YP62DWaDXpEUw9sY')
 
 # Admin user IDs
-admin_id = ["5894556386"]
+admin_id = ["5621935577"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -48,7 +48,7 @@ allowed_user_ids = read_users()
 
 # Function to log command to the file
 def log_command(user_id, target, port, time):
-    admin_id = ["5588464519"]
+    admin_id = ["5621935577"]
     user_info = bot.get_chat(user_id)
     if user_info.username:
         username = "@" + user_info.username
@@ -208,7 +208,7 @@ def clear_logs_command(message):
         except FileNotFoundError:
             response = "Logs are already cleared ❌."
     else:
-        response = "You have not purchased yet purchase now from :- @venomXcrazy ❄."
+        response = "You have not purchased yet purchase now from :- @PRIYA1FF ❄."
     bot.reply_to(message, response)
 
 
@@ -285,7 +285,7 @@ def start_attack_reply(message, target, port, time):
 # Dictionary to store the last time each user ran the /bgmi command
 bgmi_cooldown = {}
 
-COOLDOWN_TIME =0
+COOLDOWN_TIME =30
 
 # Handler for /bgmi command
 @bot.message_handler(commands=['bgmi'])
@@ -357,7 +357,7 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @venomXcrazy
+Buy From :- @PRIYA1FF
 Official Channel :- https://t.me/V3NOM_CH3AT
 '''
     for handler in bot.message_handlers:
@@ -375,7 +375,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴅᴅᴏs ʙᴏᴛ, {user_name}! ᴛʜɪs ɪs ʜɪɢʜ ǫᴜᴀʟɪᴛʏ sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴅᴅᴏs. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇss.
 🤖Try To Run This Command : /help 
-✅BUY :- @venomXcrazy'''
+✅BUY :- PRIYA1FF'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
@@ -404,7 +404,7 @@ Day-->80 Rs
 Week-->400 Rs
 Month-->1000 Rs
 '''
-    bot.reply_to(message, response)
+    bot.PRIYA1FF(message, response)
 
 @bot.message_handler(commands=['admincmd'])
 def welcome_plan(message):
